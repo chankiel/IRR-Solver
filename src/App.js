@@ -74,7 +74,19 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 mb-28">
+      <div className='fixed bottom-0 left-5 bg-white'>
+        <h1 className='text-2xl font-bold'>
+          Tugas Teori Suku Bunga
+        </h1>
+        <h2 className='text-xl font-semibold'>
+          Mencari nilai IRR dengan Metode Numerik Newton-Raphson
+        </h2>
+        <p className='text-'>
+          Ignatius Jhon Hezkiel Chan - 13522029
+        </p>
+      </div>
+      
       <h1 className="text-2xl font-bold mb-4">IRR Calculator</h1>
       <div className="mb-10 flex items-center gap-4">
         <label className="block mb-2">Enter the number of periods:</label>
@@ -89,7 +101,7 @@ function App() {
       </div>
 
       {Array.from({ length: numInputs }).map((_, index) => (
-        <div key={index} className="mb-4 flex gap-5">
+        <div key={index} className="mb-4 flex gap-2 md:gap-5">
           <label className="block mb-1">
             Year {index} Contribution:
             <input
